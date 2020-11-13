@@ -36,7 +36,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 .grid-item img {
@@ -59,11 +59,12 @@ body {
 
 .form {
   grid-area: form;
-  background-color: sandybrown;
 }
 
 .form-desc {
   grid-area: form-desc;
+  background-color: rgb(117, 63, 122);
+  color: white;
 }
 
 .careers {
@@ -122,4 +123,34 @@ body {
   background-color: rgb(15, 15, 15);
   color: white;
   border: 1px solid rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 768px) {
+  .project-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6;
+    grid-template-areas:
+    /* "blog blog blog-desc blog-desc careers careers"
+    "blog blog blog-desc blog-desc careers careers"
+    "memories-desc memories-desc portfolio portfolio careers careers"
+    "memories memories portfolio portfolio careers-desc careers-desc"
+    "memories memories portfolio portfolio wordhunt wordhunt"
+    "memories memories portfolio-desc portfolio-desc wordhunt wordhunt"
+    "form form form-desc form-desc  wordhunt-desc wordhunt-desc" */
+      "portfolio-desc"
+      "blog-desc"
+      "memories-desc"
+      "careers-desc"
+      "wordhunt-desc"
+      "form-desc";
+  }
+
+  .demo {
+    display: none;
+  }
+
+  .grid-item {
+    padding: 5%;
+  }
 }
