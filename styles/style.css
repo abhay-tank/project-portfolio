@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.project-box {
+  min-height: 350vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "blog blog blog-desc blog-desc careers careers"
+    "blog blog blog-desc blog-desc careers careers"
+    "memories-desc memories-desc portfolio portfolio careers careers"
+    "memories memories portfolio portfolio careers-desc careers-desc"
+    "memories memories portfolio portfolio wordhunt wordhunt"
+    "memories memories portfolio-desc portfolio-desc wordhunt wordhunt"
+    "form form form-desc form-desc  wordhunt-desc wordhunt-desc";
+  /* align-items: center; */
+  /* justify-content: center; */
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.grid-item img {
+  width: 80%;
+  height: auto;
+  padding: 5%;
+}
+
+.grid-item h3 {
+  padding: 5%;
+}
+
+.grid-item .preview {
+  width: 100%;
+  height: 100%;
+}
+.blog {
+  grid-area: blog;
+}
+
+.form {
+  grid-area: form;
+  background-color: sandybrown;
+}
+
+.form-desc {
+  grid-area: form-desc;
+}
+
+.careers {
+  grid-area: careers;
+}
+
+.careers-desc {
+  grid-area: careers-desc;
+  background-color: black;
+  color: white;
+}
+
+.blog-desc {
+  grid-area: blog-desc;
+  background-color: #fdc43c;
+}
+
+.memories {
+  grid-area: memories;
+}
+
+.memories-desc {
+  grid-area: memories-desc;
+  background-color: #cde9e0;
+}
+
+.portfolio {
+  grid-area: portfolio;
+}
+
+.portfolio-desc {
+  grid-area: portfolio-desc;
+}
+
+.wordhunt {
+  grid-area: wordhunt;
+  background-color: yellow;
+}
+
+.wordhunt-desc {
+  grid-area: wordhunt-desc;
+}
+
+.btn-button {
+  font-size: 1.5rem;
+  padding: 0.5rem 3rem;
+  text-decoration: none;
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid rgb(15, 15, 15);
+  transition: 300ms;
+}
+
+.btn-button:hover {
+  background-color: rgb(15, 15, 15);
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
