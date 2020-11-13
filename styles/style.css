@@ -12,18 +12,17 @@ body {
 }
 
 .project-box {
-  min-height: 350vh;
+  min-height: 500vh;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-    "blog blog blog-desc blog-desc careers careers"
-    "blog blog blog-desc blog-desc careers careers"
-    "memories-desc memories-desc portfolio portfolio careers careers"
-    "memories memories portfolio portfolio careers-desc careers-desc"
-    "memories memories portfolio portfolio wordhunt wordhunt"
-    "memories memories portfolio-desc portfolio-desc wordhunt wordhunt"
-    "form form form-desc form-desc  wordhunt-desc wordhunt-desc";
+    "portfolio portfolio portfolio-desc"
+    "blog-desc blog blog"
+    "careers careers careers-desc"
+    "memories-desc memories memories"
+    "wordhunt wordhunt wordhunt-desc"
+    "form-desc form form";
   /* align-items: center; */
   /* justify-content: center; */
   align-items: stretch;
